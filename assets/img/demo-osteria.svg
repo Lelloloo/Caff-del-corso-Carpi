@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="osteria-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181310"/>
+      <stop offset="100%" stop-color="#0d0a08"/>
+    </linearGradient>
+    <linearGradient id="osteria-warm" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <!-- Browser Frame -->
+  <rect width="600" height="380" rx="12" fill="#0f131c" stroke="#252e42" stroke-width="1.5"/>
+  <rect width="600" height="36" rx="12" fill="#141a29"/>
+  <!-- Browser dots -->
+  <circle cx="24" cy="18" r="4.5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="40" cy="18" r="4.5" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="56" cy="18" r="4.5" fill="#10b981" opacity="0.8"/>
+  <!-- Address bar -->
+  <rect x="80" y="8" width="440" height="20" rx="6" fill="#0c1017"/>
+  <text x="300" y="22" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">osteriadelvicolo.it</text>
+  
+  <!-- Website Content Preview -->
+  <g transform="translate(16, 48)">
+    <!-- Header -->
+    <text x="16" y="24" fill="#fbbf24" font-family="serif" font-size="16" font-weight="bold">Osteria del Vicolo</text>
+    <rect x="430" y="10" width="120" height="26" rx="13" fill="url(#osteria-warm)"/>
+    <text x="490" y="27" fill="#0f172a" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Prenota Tavolo</text>
+    
+    <!-- Hero Banner inside demo -->
+    <rect x="16" y="48" width="536" height="130" rx="10" fill="url(#osteria-bg)" stroke="#38281d" stroke-width="1"/>
+    <!-- Decorative plate illustration -->
+    <circle cx="440" cy="113" r="45" fill="#291e17" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <circle cx="440" cy="113" r="32" fill="#1f1610"/>
+    <path d="M425 113 Q440 98 455 113 Q440 128 425 113" fill="#f59e0b" opacity="0.7"/>
+    
+    <text x="36" y="86" fill="#fef3c7" font-family="serif" font-size="20" font-weight="bold">Cucina Tradizionale &amp; Vini Locali</text>
+    <text x="36" y="112" fill="#d1d5db" font-family="sans-serif" font-size="12">Ingredienti a km 0, pasta fresca fatta a mano ogni giorno.</text>
+    <rect x="36" y="130" width="140" height="28" rx="6" fill="#f59e0b"/>
+    <text x="106" y="148" fill="#181310" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Vedi Menù del Giorno</text>
+    
+    <!-- Featured Menu Highlights -->
+    <g transform="translate(16, 192)">
+      <!-- Card 1 -->
+      <rect x="0" y="0" width="170" height="110" rx="8" fill="#141a29" stroke="#252e42"/>
+      <rect x="12" y="12" width="28" height="28" rx="6" fill="#f59e0b" opacity="0.2"/>
+      <!-- SVG Fork & Knife Icon -->
+      <path d="M22 20 L22 32 M24 20 L24 24 M20 20 L20 24 M28 20 L28 32 M30 20 C30 24 28 26 28 26" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="12" y="58" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="600">Primi Tipici</text>
+      <text x="12" y="76" fill="#94a3b8" font-family="sans-serif" font-size="10">Tagliatelle al ragù antico</text>
+      <text x="12" y="96" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="600">€ [DA COMPILARE]</text>
+      
+      <!-- Card 2 -->
+      <rect x="183" y="0" width="170" height="110" rx="8" fill="#141a29" stroke="#252e42"/>
+      <rect x="195" y="12" width="28" height="28" rx="6" fill="#f59e0b" opacity="0.2"/>
+      <!-- SVG Flame / Grill Icon -->
+      <path d="M209 30 C204 30 203 26 206 23 C208 21 210 24 211 20 C213 23 215 25 214 27 C213 29 211 30 209 30 Z" fill="#f59e0b"/>
+      <text x="195" y="58" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="600">Secondi alla Brace</text>
+      <text x="195" y="76" fill="#94a3b8" font-family="sans-serif" font-size="10">Carni selezionate locali</text>
+      <text x="195" y="96" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="600">€ [DA COMPILARE]</text>
+      
+      <!-- Card 3 -->
+      <rect x="366" y="0" width="170" height="110" rx="8" fill="#141a29" stroke="#252e42"/>
+      <rect x="378" y="12" width="28" height="28" rx="6" fill="#38bdf8" opacity="0.2"/>
+      <!-- SVG Pin Icon -->
+      <path d="M392 20 C388.5 20 386 22.5 386 25.5 C386 29.5 392 34 392 34 C392 34 398 29.5 398 25.5 C398 22.5 395.5 20 392 20 Z" fill="#38bdf8"/>
+      <circle cx="392" cy="25" r="2" fill="#141a29"/>
+      <text x="378" y="58" fill="#f8fafc" font-family="sans-serif" font-size="12" font-weight="600">Dove Siamo</text>
+      <text x="378" y="76" fill="#94a3b8" font-family="sans-serif" font-size="10">Centro Storico • Aperto sera</text>
+      <text x="378" y="96" fill="#10b981" font-family="sans-serif" font-size="11" font-weight="600">Apri Google Maps ›</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="art-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141a22"/>
+      <stop offset="100%" stop-color="#0c1017"/>
+    </linearGradient>
+    <linearGradient id="wood-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <!-- Browser Frame -->
+  <rect width="600" height="380" rx="12" fill="#0f131c" stroke="#252e42" stroke-width="1.5"/>
+  <rect width="600" height="36" rx="12" fill="#141a29"/>
+  <!-- Browser dots -->
+  <circle cx="24" cy="18" r="4.5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="40" cy="18" r="4.5" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="56" cy="18" r="4.5" fill="#10b981" opacity="0.8"/>
+  <!-- Address bar -->
+  <rect x="80" y="8" width="440" height="20" rx="6" fill="#0c1017"/>
+  <text x="300" y="22" fill="#64748b" font-family="sans-serif" font-size="11" text-anchor="middle">bottegalegnovivo.it</text>
+  
+  <!-- Website Content Preview -->
+  <g transform="translate(16, 48)">
+    <!-- Header -->
+    <text x="16" y="24" fill="#f1f5f9" font-family="sans-serif" font-size="15" font-weight="700" letter-spacing="1">LEGNO VIVO • BOTTEGA ARTIGIANA</text>
+    <rect x="420" y="10" width="130" height="26" rx="6" fill="url(#wood-accent)"/>
+    <text x="485" y="27" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">Richiedi Preventivo</text>
+    
+    <!-- Hero Banner inside demo -->
+    <rect x="16" y="48" width="536" height="130" rx="10" fill="url(#art-bg)" stroke="#1e293b" stroke-width="1"/>
+    
+    <!-- Decorative furniture geometric sketch -->
+    <g transform="translate(420, 75)" stroke="#38bdf8" stroke-width="1.5" opacity="0.6">
+      <rect x="0" y="15" width="80" height="40" rx="2" fill="none"/>
+      <line x1="10" y1="55" x2="5" y2="75"/>
+      <line x1="70" y1="55" x2="75" y2="75"/>
+      <line x1="20" y1="0" x2="60" y2="0"/>
+      <line x1="40" y1="0" x2="40" y2="15"/>
+    </g>
+    
+    <text x="36" y="84" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="2">ARREDI SU MISURA &amp; RESTAURO</text>
+    <text x="36" y="112" fill="#f8fafc" font-family="sans-serif" font-size="20" font-weight="bold">Mobili unici lavorati a mano</text>
+    <text x="36" y="134" fill="#94a3b8" font-family="sans-serif" font-size="12">Dal disegno alla consegna: legno massello sostenibile per la tua casa.</text>
+    <rect x="36" y="148" width="120" height="22" rx="4" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+    <text x="96" y="163" fill="#38bdf8" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle">Esplora la Galleria</text>
+    
+    <!-- Portfolio Gallery Grid Preview -->
+    <g transform="translate(16, 192)">
+      <rect x="0" y="0" width="170" height="110" rx="8" fill="#161e2e" stroke="#253248"/>
+      <rect x="12" y="12" width="146" height="54" rx="4" fill="#0d1420"/>
+      <text x="85" y="44" fill="#64748b" font-family="sans-serif" font-size="10" text-anchor="middle">[Foto Tavolo Rovere]</text>
+      <text x="12" y="82" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Tavolo Massello Rovere</text>
+      <text x="12" y="98" fill="#94a3b8" font-family="sans-serif" font-size="10">Progetto per salone moderno</text>
+      
+      <rect x="183" y="0" width="170" height="110" rx="8" fill="#161e2e" stroke="#253248"/>
+      <rect x="195" y="12" width="146" height="54" rx="4" fill="#0d1420"/>
+      <text x="268" y="44" fill="#64748b" font-family="sans-serif" font-size="10" text-anchor="middle">[Foto Libreria a Parete]</text>
+      <text x="195" y="82" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Libreria su misura</text>
+      <text x="195" y="98" fill="#94a3b8" font-family="sans-serif" font-size="10">Legno di noce canaletto</text>
+      
+      <rect x="366" y="0" width="170" height="110" rx="8" fill="#161e2e" stroke="#253248"/>
+      <rect x="378" y="12" width="146" height="54" rx="4" fill="#0d1420"/>
+      <text x="451" y="44" fill="#64748b" font-family="sans-serif" font-size="10" text-anchor="middle">[Foto Bancone Locale]</text>
+      <text x="378" y="82" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Arredo Bar &amp; Negozi</text>
+      <text x="378" y="98" fill="#94a3b8" font-family="sans-serif" font-size="10">Finiture resistenti e calde</text>
+    </g>
+  </g>
+</svg>

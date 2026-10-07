@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%" fill="none" role="img" aria-label="Logo Caffè del Corso Carpi">
+  <defs>
+    <radialGradient id="logoBgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4A373" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#121110" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E5AB"/>
+      <stop offset="50%" stop-color="#D4A373"/>
+      <stop offset="100%" stop-color="#9A6B38"/>
+    </linearGradient>
+    <linearGradient id="cupSteam" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#D4A373" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#E76F51" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="80" cy="80" r="76" fill="url(#logoBgGlow)"/>
+
+  <!-- Outer Ring with Art Deco ticks -->
+  <circle cx="80" cy="80" r="72" stroke="url(#goldGradient)" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <circle cx="80" cy="80" r="66" stroke="#D4A373" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- Coffee Cup Base & Rim -->
+  <path d="M52 82 C52 104 64 112 80 112 C96 112 108 104 108 82 Z" fill="#1C1A17" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linejoin="round"/>
+  
+  <!-- Cup Handle -->
+  <path d="M106 86 C115 86 122 92 122 99 C122 106 114 110 105 108" fill="none" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Coffee Crema Surface -->
+  <ellipse cx="80" cy="82" rx="28" ry="7" fill="#8C5827" stroke="url(#goldGradient)" stroke-width="1"/>
+  <ellipse cx="78" cy="81.5" rx="20" ry="4" fill="#D4A373" fill-opacity="0.65"/>
+  <ellipse cx="74" cy="81" rx="8" ry="2" fill="#FFF2DC" fill-opacity="0.4"/>
+
+  <!-- Saucer -->
+  <path d="M42 115 C54 122 106 122 118 115" stroke="url(#goldGradient)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Rising Elegant Steam Swirls -->
+  <path d="M72 74 C70 65 77 60 74 50 C72 44 68 40 70 34" fill="none" stroke="url(#cupSteam)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M80 72 C83 63 78 57 82 48 C85 41 82 36 84 30" fill="none" stroke="url(#cupSteam)" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M88 74 C86 66 92 61 89 52 C87 45 90 41 89 36" fill="none" stroke="url(#cupSteam)" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Star accents -->
+  <polygon points="80,18 82,23 87,24 83,27 84,32 80,29 76,32 77,27 73,24 78,23" fill="url(#goldGradient)"/>
+  <circle cx="34" cy="80" r="1.5" fill="#D4A373"/>
+  <circle cx="126" cy="80" r="1.5" fill="#D4A373"/>
+
+  <!-- Year / Heritage Tag -->
+  <text x="80" y="138" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="700" fill="#D4A373" letter-spacing="3" text-anchor="middle">CARPI • CENTRO</text>
+</svg>

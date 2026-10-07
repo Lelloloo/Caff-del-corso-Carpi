@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="shop-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191924"/>
+      <stop offset="100%" stop-color="#0e0f17"/>
+    </linearGradient>
+    <linearGradient id="violet-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <!-- Browser Frame -->
+  <rect width="600" height="380" rx="12" fill="#0f131c" stroke="#252e42" stroke-width="1.5"/>
+  <rect width="600" height="36" rx="12" fill="#141a29"/>
+  <!-- Browser dots -->
+  <circle cx="24" cy="18" r="4.5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="40" cy="18" r="4.5" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="56" cy="18" r="4.5" fill="#10b981" opacity="0.8"/>
+  <!-- Address bar -->
+  <rect x="80" y="8" width="440" height="20" rx="6" fill="#0c1017"/>
+  <text x="300" y="22" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">otticadiquartiere.it</text>
+  
+  <!-- Website Content Preview -->
+  <g transform="translate(16, 48)">
+    <!-- Header -->
+    <text x="16" y="24" fill="#f8fafc" font-family="sans-serif" font-size="15" font-weight="700">OTTICA CENTRO • BOUTIQUE</text>
+    <rect x="410" y="10" width="140" height="26" rx="13" fill="#10b981"/>
+    <text x="480" y="27" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">WhatsApp Diretto</text>
+    
+    <!-- Hero Banner inside demo -->
+    <rect x="16" y="48" width="536" height="130" rx="10" fill="url(#shop-bg)" stroke="#2b2d42" stroke-width="1"/>
+    
+    <!-- Glasses icon illustration -->
+    <g transform="translate(420, 85)" stroke="#818cf8" stroke-width="2" fill="none">
+      <circle cx="20" cy="25" r="18"/>
+      <circle cx="70" cy="25" r="18"/>
+      <path d="M38 25 Q45 20 52 25"/>
+      <path d="M2 25 L-10 15"/>
+      <path d="M88 25 L100 15"/>
+    </g>
+    
+    <text x="36" y="84" fill="#818cf8" font-family="sans-serif" font-size="11" font-weight="700" letter-spacing="1">NUOVE COLLEZIONI 2026</text>
+    <text x="36" y="112" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="bold">Occhiali di design &amp; controllo vista</text>
+    <text x="36" y="134" fill="#94a3b8" font-family="sans-serif" font-size="12">Marchi indipendenti, lenti di precisione e assistenza dedicata.</text>
+    <rect x="36" y="148" width="150" height="22" rx="4" fill="url(#violet-accent)"/>
+    <text x="111" y="163" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="600" text-anchor="middle">Prenota Controllo Gratuito</text>
+    
+    <!-- Info row preview -->
+    <g transform="translate(16, 192)">
+      <!-- Card 1: Clock vector icon -->
+      <rect x="0" y="0" width="170" height="110" rx="8" fill="#151724" stroke="#25293d"/>
+      <g transform="translate(16, 16)" stroke="#818cf8" stroke-width="1.8" fill="none">
+        <circle cx="10" cy="10" r="9"/>
+        <polyline points="10 5 10 10 14 12"/>
+      </g>
+      <text x="16" y="58" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Orari Negozio</text>
+      <text x="16" y="76" fill="#94a3b8" font-family="sans-serif" font-size="10">Lun-Sab: 9:00 - 19:30</text>
+      <text x="16" y="94" fill="#10b981" font-family="sans-serif" font-size="10" font-weight="600">Aperto oggi</text>
+      
+      <!-- Card 2: Eyewear vector icon -->
+      <rect x="183" y="0" width="170" height="110" rx="8" fill="#151724" stroke="#25293d"/>
+      <g transform="translate(195, 18)" stroke="#818cf8" stroke-width="1.5" fill="none">
+        <circle cx="7" cy="8" r="6"/>
+        <circle cx="21" cy="8" r="6"/>
+        <path d="M13 8 Q14 6 15 8"/>
+      </g>
+      <text x="195" y="58" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Marchi Selezionati</text>
+      <text x="195" y="76" fill="#94a3b8" font-family="sans-serif" font-size="10">Montature artigianali e lenti protettive</text>
+      
+      <!-- Card 3: Location pin vector icon -->
+      <rect x="366" y="0" width="170" height="110" rx="8" fill="#151724" stroke="#25293d"/>
+      <g transform="translate(378, 16)">
+        <path d="M10 2 C6.7 2 4 4.7 4 8 C4 12.5 10 18 10 18 C10 18 16 12.5 16 8 C16 4.7 13.3 2 10 2 Z" fill="#818cf8"/>
+        <circle cx="10" cy="8" r="2.5" fill="#151724"/>
+      </g>
+      <text x="378" y="58" fill="#f8fafc" font-family="sans-serif" font-size="11" font-weight="600">Vieni a Trovarci</text>
+      <text x="378" y="76" fill="#94a3b8" font-family="sans-serif" font-size="10">Parcheggio riservato clienti</text>
+      <text x="378" y="96" fill="#38bdf8" font-family="sans-serif" font-size="10" font-weight="600">Guarda la mappa ›</text>
+    </g>
+  </g>
+</svg>

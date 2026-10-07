@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caffè del Corso — Carpi (MO) | Caffetteria, Pausa Pranzo &amp; Cocktail Bar</title>
+  <meta name="description" content="Caffè del Corso è la storica caffetteria e cocktail bar nel centro storico di Carpi (MO), in Corso Manfredo Fanti 93. Colazioni artigianali, pausa pranzo emiliana e aperitivi d'autore.">
+
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Caffè del Corso — Carpi (MO)">
+  <meta property="og:description" content="Colazioni artigianali, pausa pranzo di qualità e il rito dell'aperitivo nel cuore del centro storico di Carpi.">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:image" content="assets/hero-barista.webp">
+  <meta name="theme-color" content="#FAF8F5">
+
+  <!-- Favicon iconico -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+
+  <!-- Google Fonts: Cormorant Garamond per titoli eleganti, Plus Jakarta Sans per leggibilità moderna -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Foglio di stile principale -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       1. PAGE LOADER INIZIALE (Durata ~1.2s)
+       ═══════════════════════════════════════════ -->
+  <div class="page-loader" id="page-loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-icon-wrap">
+        <svg class="loader-svg" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Steam animations -->
+          <path class="steam steam-1" d="M28 28 C26 20 33 14 30 6" stroke="#C68B59" stroke-width="2.2" stroke-linecap="round"/>
+          <path class="steam steam-2" d="M40 26 C43 18 37 11 41 4" stroke="#C68B59" stroke-width="2.4" stroke-linecap="round"/>
+          <path class="steam steam-3" d="M52 28 C50 20 56 14 54 6" stroke="#C68B59" stroke-width="2.2" stroke-linecap="round"/>
+          <!-- Tazza caffè -->
+          <path d="M18 36 C18 56 30 64 40 64 C50 64 62 56 62 36 Z" fill="#FFFFFF" stroke="#C68B59" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M62 40 C70 40 76 44 76 49 C76 54 70 58 62 56" fill="none" stroke="#C68B59" stroke-width="2.4" stroke-linecap="round"/>
+          <ellipse cx="40" cy="36" rx="22" ry="6" fill="#A66E3E"/>
+          <ellipse cx="38" cy="35.5" rx="15" ry="3.5" fill="#E8C7A5"/>
+          <path d="M12 68 C22 74 58 74 68 68" stroke="#C68B59" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h2 class="loader-title">Caffè del Corso</h2>
+      <p class="loader-sub">Carpi · Centro Storico</p>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       2. HEADER / NAVBAR (Frosted Glass & Sticky)
+       ═══════════════════════════════════════════ -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <!-- Logo Brand -->
+      <a href="#hero" class="brand-logo" aria-label="Caffè del Corso — Torna all'inizio">
+        <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="16" fill="#FDFBF7" stroke="#C68B59" stroke-width="1.5"/>
+            <path d="M10 20 C10 28 14 31 18 31 C22 31 26 28 26 20 Z" fill="#C68B59"/>
+            <path d="M26 21 C29 21 31 23 31 25 C31 27 29 29 26 28" fill="none" stroke="#C68B59" stroke-width="1.4" stroke-linecap="round"/>
+            <ellipse cx="18" cy="20" rx="8" ry="2.5" fill="#FAF8F5"/>
+            <path d="M15 17 C14.5 14 16.5 12 16 9" stroke="#C68B59" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M19 16 C19.5 13 18 11 19 8" stroke="#C68B59" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <div class="brand-text-wrap">
+          <span class="brand-name">Caffè del Corso</span>
+          <span class="brand-location">Carpi · Corso Fanti, 93</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" id="main-nav" aria-label="Navigazione principale">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-item">Home</a></li>
+          <li><a href="#momenti" class="nav-item">I Tre Momenti</a></li>
+          <li><a href="#menu" class="nav-item">Menu Digitale</a></li>
+          <li><a href="#chi-siamo" class="nav-item">L'Atmosfera</a></li>
+          <li><a href="#dove-siamo" class="nav-item">Dove Siamo</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA WhatsApp Rapido -->
+      <div class="header-cta-group">
+        <a href="https://wa.me/390596865270?text=Ciao%20Caff%C3%A8%20del%20Corso!%20Vorrei%20prenotare%20un%20tavolo." 
+           target="_blank" rel="noopener noreferrer" 
+           class="btn btn-whatsapp-header" 
+           aria-label="Prenota via WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span>Prenota via WhatsApp</span>
+        </a>
+
+        <!-- Hamburger Mobile -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="main-nav">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══════════════════════════════════════════
+         3. HERO SECTION (Luminosa, Accogliente)
+         ═══════════════════════════════════════════ -->
+    <section class="hero-section" id="hero" aria-label="Benvenuto al Caffè del Corso">
+      <div class="hero-bg-accent" aria-hidden="true"></div>
+      
+      <div class="container hero-container">
+        <!-- Colonna Testuale -->
+        <div class="hero-content">
+          <!-- Badge Google Rating -->
+          <div class="hero-badge reveal">
+            <span class="badge-star" aria-hidden="true">★</span>
+            <span class="badge-text"><strong>4.4 / 5</strong> su Google Maps</span>
+            <span class="badge-dot" aria-hidden="true">•</span>
+            <span class="badge-loc">Nel centro storico di Carpi</span>
+          </div>
+
+          <!-- Titolo Principale -->
+          <h1 class="hero-title reveal">
+            Il Tuo Punto di Riferimento<br>
+            <span class="hero-title-highlight">nel Cuore di Carpi</span>
+          </h1>
+
+          <!-- Sottotitolo Reale -->
+          <p class="hero-subtitle reveal">
+            Dalla colazione artigianale alla pausa pranzo, fino all'aperitivo in Corso Fanti. Un ambiente caldo e autentico per chi ama il buon gusto e la convivialità emiliana.
+          </p>
+
+          <!-- Bottoni CTA Obbligatori -->
+          <div class="hero-cta-group reveal">
+            <a href="#menu" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+              <span>Esplora il Menu</span>
+            </a>
+
+            <a href="https://wa.me/390596865270?text=Ciao!%20Vorrei%20prenotare%20un%20tavolo%20al%20Caff%C3%A8%20del%20Corso." 
+               target="_blank" rel="noopener noreferrer" 
+               class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              <span>Prenota un Tavolo</span>
+            </a>
+          </div>
+
+          <!-- Highlight Micro-Caratteristiche -->
+          <div class="hero-features reveal">
+            <div class="hero-feature-item">
+              <span class="feature-icon" aria-hidden="true">🥐</span>
+              <span>Brioches &amp; Pasticceria fresca</span>
+            </div>
+            <div class="hero-feature-item">
+              <span class="feature-icon" aria-hidden="true">🍝</span>
+              <span>Pausa pranzo veloce &amp; tipica</span>
+            </div>
+            <div class="hero-feature-item">
+              <span class="feature-icon" aria-hidden="true">🍸</span>
+              <span>Aperitivi, Spritz &amp; Cocktail</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonna Visiva: Immagine Reale del Barista e Bancone con Street View -->
+        <div class="hero-visual reveal">
+          <div class="hero-image-card">
+            <picture>
+              <source srcset="assets/hero-barista.webp" type="image/webp">
+              <img src="assets/hero-barista.jpg" 
+                   alt="Il cordiale barista del Caffè del Corso al bancone con caffè, paste artigianali e vista su Corso Fanti" 
+                   class="hero-img" 
+                   width="714" height="645" 
+                   fetchpriority="high">
+            </picture>
+
+            <!-- Floating Badge Posizione -->
+            <div class="hero-float-badge float-badge-bottom">
+              <div class="float-badge-icon">📍</div>
+              <div>
+                <p class="float-badge-title">Corso Manfredo Fanti, 93</p>
+                <p class="float-badge-sub">A pochi passi da Piazza dei Martiri</p>
+              </div>
+            </div>
+
+            <!-- Floating Badge Qualità Caffè -->
+            <div class="hero-float-badge float-badge-top">
+              <div class="float-badge-icon">☕</div>
+              <div>
+                <p class="float-badge-title">Espresso di Selezione</p>
+                <p class="float-badge-sub">Macinato al momento · Crema perfetta</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         4. I TRE MOMENTI DELLA GIORNATA
+         ═══════════════════════════════════════════ -->
+    <section class="section momenti-section" id="momenti" aria-labelledby="momenti-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Ogni momento ha il suo gusto</span>
+          <h2 id="momenti-title" class="section-title">I Tre Momenti della Giornata</h2>
+          <p class="section-desc">
+            Dalle prime luci del mattino fino a tarda sera, il Caffè del Corso è la tua casa nel centro storico di Carpi.
+          </p>
+        </div>
+
+        <div class="momenti-grid">
+          <!-- CARD 1: COLAZIONI & PASTICCERIA -->
+          <article class="momento-card reveal" style="--card-delay: 0.1s">
+            <div class="momento-img-wrap">
+              <picture>
+                <source srcset="assets/hero-barista.webp" type="image/webp">
+                <img src="assets/hero-barista.jpg" 
+                     alt="Colazioni e pasticceria artigianale con brioches fresche e cappuccino al Caffè del Corso" 
+                     loading="lazy" width="600" height="400">
+              </picture>
+              <span class="momento-time-badge">07:00 – 11:30</span>
+            </div>
+            <div class="momento-body">
+              <div class="momento-icon-title">
+                <span class="momento-emoji">☕</span>
+                <h3 class="momento-heading">Colazioni &amp; Pasticceria</h3>
+              </div>
+              <p class="momento-text">
+                Brioches fresche ogni mattina, espresso di selezione, cappuccino cremoso e un vasto assortimento di opzioni dolci e salate per iniziare la giornata con la giusta energia.
+              </p>
+              <ul class="momento-list">
+                <li>Brioches farcite al momento (crema, cioccolato, marmellata, pistacchio)</li>
+                <li>Espresso, cappuccino d'autore e latte macchiato</li>
+                <li>Tranci salati, focaccine e toast caldi</li>
+                <li>Spremute fresche d'arancia e centrifugati di frutta</li>
+              </ul>
+              <button type="button" class="btn btn-card-action" data-filter="colazione">
+                <span>Vedi Menu Colazioni</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- CARD 2: PAUSA PRANZO FAST & QUALITY -->
+          <article class="momento-card momento-card--highlight reveal" style="--card-delay: 0.2s">
+            <div class="highlight-ribbon">Più Richiesto in Centro</div>
+            <div class="momento-img-wrap">
+              <picture>
+                <source srcset="assets/sala-interna.webp" type="image/webp">
+                <img src="assets/sala-interna.jpg" 
+                     alt="La sala interna e i tavoli del Caffè del Corso per la pausa pranzo a Carpi" 
+                     loading="lazy" width="600" height="400">
+              </picture>
+              <span class="momento-time-badge">12:00 – 14:30</span>
+            </div>
+            <div class="momento-body">
+              <div class="momento-icon-title">
+                <span class="momento-emoji">🍝</span>
+                <h3 class="momento-heading">Pausa Pranzo Fast &amp; Quality</h3>
+              </div>
+              <p class="momento-text">
+                Pensata per chi lavora o studia in centro e desidera un pranzo veloce senza rinunciare alla qualità della tradizione emiliana: primi caldi, piadine fragranti e insalatone nutrienti.
+              </p>
+              <ul class="momento-list">
+                <li>Primi piatti della tradizione (Tortellini, Tagliatelle al Ragù, Lasagne)</li>
+                <li>Piadine artigianali e focacce farcite calde</li>
+                <li>Insalatone ricche con Parmigiano Reggiano e Aceto Balsamico</li>
+                <li>Menu combinati veloci con coperto e caffè inclusi</li>
+              </ul>
+              <button type="button" class="btn btn-card-action btn-card-action--primary" data-filter="pranzo">
+                <span>Vedi Proposte Pranzo</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- CARD 3: L'APERITIVO AL CORSO -->
+          <article class="momento-card reveal" style="--card-delay: 0.3s">
+            <div class="momento-img-wrap">
+              <picture>
+                <source srcset="assets/cocktail-martini.webp" type="image/webp">
+                <img src="assets/cocktail-martini.jpg" 
+                     alt="Aperitivo al Corso con cocktail d'autore e stuzzichini" 
+                     loading="lazy" width="600" height="400">
+              </picture>
+              <span class="momento-time-badge">18:00 – A Notte</span>
+            </div>
+            <div class="momento-body">
+              <div class="momento-icon-title">
+                <span class="momento-emoji">🍸</span>
+                <h3 class="momento-heading">L'Aperitivo al Corso</h3>
+              </div>
+              <p class="momento-text">
+                Il rituale dell'aperitivo nel punto d'incontro più amato di Corso Fanti: cocktail preparati ad arte, bollicine, Lambrusco di Modena e ricchi taglieri di salumi e formaggi.
+              </p>
+              <ul class="momento-list">
+                <li>Spritz (Aperol, Campari, Hugo, Select) &amp; Negroni perfetto</li>
+                <li>Cocktail signature del barista e classici internazionali</li>
+                <li>Vini DOC emiliani (Lambrusco Grasparossa/Sorbara, Pignoletto)</li>
+                <li>Taglieri di Prosciutto di Parma, Mortadella, stuzzichini caldi</li>
+              </ul>
+              <button type="button" class="btn btn-card-action" data-filter="aperitivi">
+                <span>Vedi Aperitivi &amp; Drink</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/></svg>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         5. MENU DIGITALE INTERATTIVO (No PDF!)
+         ═══════════════════════════════════════════ -->
+    <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Trasparenza &amp; Qualità</span>
+          <h2 id="menu-title" class="section-title">Il Nostro Menu Digitale</h2>
+          <p class="section-desc">
+            Consulta i nostri piatti, le caffetterie e i drink sempre aggiornati. Seleziona una categoria per visualizzare le proposte dettagliate.
+          </p>
+        </div>
+
+        <!-- Filtri a Tab Cliccabili Senza Ricaricare la Pagina -->
+        <div class="menu-tabs-container reveal">
+          <div class="menu-tabs" role="tablist" aria-label="Categorie del Menu Digitale">
+            <button class="menu-tab-btn active" role="tab" aria-selected="true" aria-controls="panel-colazione" id="tab-colazione" data-category="colazione">
+              <span class="tab-icon">☕</span>
+              <span class="tab-label">Colazioni &amp; Caffetteria</span>
+            </button>
+            <button class="menu-tab-btn" role="tab" aria-selected="false" aria-controls="panel-pranzo" id="tab-pranzo" data-category="pranzo">
+              <span class="tab-icon">🍝</span>
+              <span class="tab-label">Pausa Pranzo</span>
+            </button>
+            <button class="menu-tab-btn" role="tab" aria-selected="false" aria-controls="panel-aperitivi" id="tab-aperitivi" data-category="aperitivi">
+              <span class="tab-icon">🍸</span>
+              <span class="tab-label">Aperitivi &amp; Drink</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- PANNELLI DEL MENU -->
+        <div class="menu-panels-wrap">
+
+          <!-- 1. CATEGORIA COLAZIONE -->
+          <div class="menu-panel active" role="tabpanel" id="panel-colazione" aria-labelledby="tab-colazione">
+            <div class="menu-grid">
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Caffè Espresso Selezione</h4>
+                  <span class="menu-item-price">€ 1,30</span>
+                </div>
+                <p class="menu-item-desc">Miscela 100% arabica selezionata, estratta con pressione calibrata e crema vellutata.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-allergen">Arabica Certificata</span>
+                  <span class="badge-diet">Vegano</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Cappuccino all'Italiana</h4>
+                  <span class="menu-item-price">€ 1,80</span>
+                </div>
+                <p class="menu-item-desc">Espresso corposo con micro-schiuma di latte fresco intero artigianale a regola d'arte.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-allergen">Contiene: Latte</span>
+                  <span class="badge-opt">Opzione Soia / Avena disponibile (+0,30€)</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Marocchino del Corso</h4>
+                  <span class="menu-item-price">€ 2,20</span>
+                </div>
+                <p class="menu-item-desc">Espresso servito in vetro con cioccolato fuso al cucchiaio, latte montato e spolverata di cacao amaro.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-allergen">Contiene: Latte, Soia</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Brioche Artigianale Sfogliata</h4>
+                  <span class="menu-item-price">€ 1,50</span>
+                </div>
+                <p class="menu-item-desc">Sfornata ogni mattina dai maestri fornai locali. Vuota o farcita al momento con crema pasticcera, cioccolato, marmellata di albicocche o pistacchio.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-allergen">Contiene: Glutine, Uova, Latte</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Cornetto Salato Farcito</h4>
+                  <span class="menu-item-price">€ 3,00</span>
+                </div>
+                <p class="menu-item-desc">Impasto soffice semi-dolce arricchito con Prosciutto Crudo di Parma 24 mesi e formaggio dolce filante.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-allergen">Contiene: Glutine, Latte, Uova</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Spremuta d'Arancia Fresca</h4>
+                  <span class="menu-item-price">€ 3,80</span>
+                </div>
+                <p class="menu-item-desc">Arance bionde o tarocco siciliane spremute al momento senza aggiunta di zuccheri.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-diet">100% Naturale · Senza Glutine</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Toast Classico con Prosciutto Cotto</h4>
+                  <span class="menu-item-price">€ 4,50</span>
+                </div>
+                <p class="menu-item-desc">Pane a fette tostato croccante, prosciutto cotto alta qualità nazionale e formaggio Edamer fuso.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-allergen">Contiene: Glutine, Latte</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Formula Colazione Completa</h4>
+                  <span class="menu-item-price">€ 5,80</span>
+                </div>
+                <p class="menu-item-desc">Cappuccino o Caffè a scelta + Brioche fresca artigianale + Spremuta d'arancia fresca espressa.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-popular">Offerta Colazione</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. CATEGORIA PAUSA PRANZO -->
+          <div class="menu-panel" role="tabpanel" id="panel-pranzo" aria-labelledby="tab-pranzo" hidden>
+            <div class="menu-grid">
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Tagliatelle all'Uovo al Ragù Tradizionale</h4>
+                  <span class="menu-item-price">€ 10,50</span>
+                </div>
+                <p class="menu-item-desc">Sfoglia tirata a mano all'uovo con ragù lento di carni miste selezionate, secondo l'antica ricetta emiliana.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-allergen">Contiene: Glutine, Uova, Sedano</span>
+                  <span class="badge-origin">Tipicità Emiliana</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Tortellini Carpigiani in Brodo / Panna</h4>
+                  <span class="menu-item-price">€ 11,50</span>
+                </div>
+                <p class="menu-item-desc">I classici tortellini fatti a mano con ripieno di lonza, prosciutto di Parma, mortadella e Parmigiano Reggiano.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-allergen">Contiene: Glutine, Uova, Latte, Sedano</span>
+                  <span class="badge-origin">Specialità Tradizionale</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Piadina Romagnola al Crudo e Squacquerone</h4>
+                  <span class="menu-item-price">€ 7,50</span>
+                </div>
+                <p class="menu-item-desc">Piadina calda sfogliata farcita con Prosciutto di Parma 24 mesi, morbido Squacquerone DOP e rucola fresca.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-allergen">Contiene: Glutine, Latte</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Focaccia Manfredo Fanti</h4>
+                  <span class="menu-item-price">€ 8,00</span>
+                </div>
+                <p class="menu-item-desc">Focaccia genovese all'olio EVO con Mortadella IGP di Bologna al pistacchio, burrata fresca e granella di pistacchio.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-allergen">Contiene: Glutine, Latte, Frutta a guscio</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Insalatona del Corso</h4>
+                  <span class="menu-item-price">€ 9,50</span>
+                </div>
+                <p class="menu-item-desc">Misticanza fresca, pomodorini confit, petto di tacchino al forno a listarelle, scaglie di Parmigiano 30 mesi e noci.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-diet">Senza Glutine</span>
+                  <span class="badge-allergen">Contiene: Latte, Frutta a guscio</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Insalata Vegetariana Mediterranea</h4>
+                  <span class="menu-item-price">€ 8,50</span>
+                </div>
+                <p class="menu-item-desc">Rucola, valeriana, bocconcini di mozzarella fiordilatte, olive taggiasche, verdure grigliate e glassa di Aceto Balsamico di Modena.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-diet">Vegetariano · Senza Glutine</span>
+                  <span class="badge-allergen">Contiene: Latte, Solfiti</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Menu Pranzo Lavoro Veloce</h4>
+                  <span class="menu-item-price">€ 13,00</span>
+                </div>
+                <p class="menu-item-desc">Primo piatto del giorno a rotazione stagionale + Acqua minerale 0.5L + Caffè espresso e coperto inclusi.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-popular">Ideale per lavoratori e studenti</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. CATEGORIA APERITIVI & DRINK -->
+          <div class="menu-panel" role="tabpanel" id="panel-aperitivi" aria-labelledby="tab-aperitivi" hidden>
+            <div class="menu-grid">
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Spritz Classico (Aperol o Campari)</h4>
+                  <span class="menu-item-price">€ 6,50</span>
+                </div>
+                <p class="menu-item-desc">Prosecco DOC Treviso, Aperol o Bitter Campari, spruzzo di soda, ghiaccio e fetta d'arancia fresca. Con stuzzichini inclusi.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-popular">Il Grande Classico</span>
+                  <span class="badge-allergen">Contiene: Solfiti</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Hugo Spritz con Menta &amp; Sambuco</h4>
+                  <span class="menu-item-price">€ 7,00</span>
+                </div>
+                <p class="menu-item-desc">Prosecco DOC, sciroppo artigianale ai fiori di sambuco, foglie di menta fresca del nostro orto e soda frizzante.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-allergen">Contiene: Solfiti</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Negroni Perfetto al Vermouth Rosso</h4>
+                  <span class="menu-item-price">€ 8,00</span>
+                </div>
+                <p class="menu-item-desc">London Dry Gin, Campari Bitter e Vermouth di Torino rosso in parti uguali, scorza d'arancia e cubo di ghiaccio trasparente.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-allergen">Contiene: Solfiti</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Espresso Martini Signature</h4>
+                  <span class="menu-item-price">€ 9,00</span>
+                </div>
+                <p class="menu-item-desc">Il nostro signature cocktail: Vodka premium, liquore al caffè Kahlúa, espresso appena estratto dalla nostra macchina e sciroppo di canna shakerati con ghiaccio.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-popular">Signature del Locale</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Lambrusco Grasparossa DOC al Calice</h4>
+                  <span class="menu-item-price">€ 4,50</span>
+                </div>
+                <p class="menu-item-desc">Rosso frizzante secco della collina modenese, profumo fruttato intenso, tannino morbido. Perfetto con i salumi.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-origin">Vino Territoriale</span>
+                  <span class="badge-allergen">Contiene: Solfiti</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Pignoletto Frizzante DOC al Calice</h4>
+                  <span class="menu-item-price">€ 4,50</span>
+                </div>
+                <p class="menu-item-desc">Bianco brioso emiliano, note floreali delicate di gelsomino e mela renetta, freschezza minerale persistente.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-origin">Vino Territoriale</span>
+                  <span class="badge-allergen">Contiene: Solfiti</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Tagliere Misto Tipico Emiliana</h4>
+                  <span class="menu-item-price">€ 14,00</span>
+                </div>
+                <p class="menu-item-desc">Generosa selezione di Prosciutto Crudo di Parma 24 mesi, Salame Felino IGP, Mortadella Bologna, cubetti di Parmigiano Reggiano 30 mesi e crostini caldi.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-popular">Ideale da Condividere (2-3 persone)</span>
+                  <span class="badge-allergen">Contiene: Glutine, Latte</span>
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="menu-item-card reveal">
+                <div class="menu-item-header">
+                  <h4 class="menu-item-name">Mocktail Analcolico Esotico</h4>
+                  <span class="menu-item-price">€ 5,50</span>
+                </div>
+                <p class="menu-item-desc">Succo di pompelmo rosa, sciroppo allo zenzero e lime, passion fruit e soda rinfrescante con rametto di rosmarino.</p>
+                <div class="menu-item-meta">
+                  <span class="badge-diet">Analcolico · 100% Rinfrescante</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /menu-panels-wrap -->
+
+        <!-- Banner Chiarimento Allergeni & Richiesta WhatsApp -->
+        <div class="menu-footer-notice reveal">
+          <div class="notice-icon">💬</div>
+          <div class="notice-text">
+            <h4>Hai allergie, intolleranze o desideri una variante su misura?</h4>
+            <p>Il nostro personale di sala e banco è a tua completa disposizione. Chiedici subito o inviaci un messaggio veloce su WhatsApp.</p>
+          </div>
+          <a href="https://wa.me/390596865270?text=Ciao%20Caff%C3%A8%20del%20Corso!%20Vorrei%20informazioni%20su%20un%20piatto%20o%20allergeni." 
+             target="_blank" rel="noopener noreferrer" 
+             class="btn btn-whatsapp-sm">
+            <span>Scrivici su WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         6. CHI SIAMO & L'ATMOSFERA (Con Foto Reali)
+         ═══════════════════════════════════════════ -->
+    <section class="section about-section" id="chi-siamo" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Testo & Filosofia -->
+          <div class="about-text-col reveal">
+            <span class="section-tag">Tradizione &amp; Ospitalità</span>
+            <h2 id="about-title" class="section-title">Un Caffè nel Cuore della Città</h2>
+            <p class="about-lead">
+              Situato in <strong>Corso Manfredo Fanti, 93</strong>, a una manciata di passi dalla maestosa Piazza dei Martiri, il Caffè del Corso è la sosta irrinunciabile per i carpigiani e per chi visita la città.
+            </p>
+            <p class="about-paragraph">
+              Che tu ti sieda ai nostri tavolini all'aperto nel vivace dehor estivo o preferisca il calore del bancone in legno con il profumo del caffè appena macinato, troverai sempre un sorriso autentico e ingredienti scelti con meticolosa attenzione.
+            </p>
+            <p class="about-paragraph">
+              Dalla pasticceria artigianale per la colazione ai taglieri della tradizione con il vino locale fino a tarda sera, celebriamo ogni giorno il valore della vera accoglienza emiliana.
+            </p>
+
+            <!-- Statistiche del Locale -->
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-num">4.4</span>
+                <span class="stat-lbl">★ Stelle su Google</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">7/7</span>
+                <span class="stat-lbl">Aperti tutti i giorni</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">07:00</span>
+                <span class="stat-lbl">Caffè caldo all'alba</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Foto 1: L'Atmosfera al Bancone -->
+          <div class="about-highlight-visual reveal">
+            <div class="about-img-box">
+              <picture>
+                <source srcset="assets/bancone-legno.webp" type="image/webp">
+                <img src="assets/bancone-legno.jpg" 
+                     alt="Il classico bancone in legno del Caffè del Corso con selezione di liquori e sgabelli d'epoca" 
+                     loading="lazy" width="600" height="600">
+              </picture>
+              <div class="about-img-caption">
+                <span class="caption-tag">Cocktail Bar Storico</span>
+                <p>Il bancone in legno massello e la ricca collezione di spiriti e amari.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GALLERIA FOTOGRAFICA: "L'ATMOSFERA" (FOTO REALI) -->
+        <div class="gallery-wrapper">
+          <div class="section-subheading-wrap reveal">
+            <h3 class="gallery-title">Gli Spazi &amp; L'Atmosfera</h3>
+            <p class="gallery-desc">Scorci reali dal nostro locale: dal dehor affacciato sulla passeggiata di Corso Fanti alle sale interne.</p>
+          </div>
+
+          <div class="atmosphere-grid">
+            <!-- 1. Dehor su Corso Fanti -->
+            <div class="atmosphere-card reveal" style="--card-delay: 0.1s">
+              <picture>
+                <source srcset="assets/dehor-corso-fanti.webp" type="image/webp">
+                <img src="assets/dehor-corso-fanti.jpg" 
+                     alt="Dehor esterno con tavoli e ombrelloni su Corso Manfredo Fanti a Carpi" 
+                     loading="lazy" width="400" height="300">
+              </picture>
+              <div class="atmosphere-overlay">
+                <h4>Il Dehors su Corso Fanti</h4>
+                <p>Tavoli all'aperto sotto gli ombrelloni, immersi nel centro storico pedonale.</p>
+              </div>
+            </div>
+
+            <!-- 2. Sala Interna e Lounge -->
+            <div class="atmosphere-card reveal" style="--card-delay: 0.2s">
+              <picture>
+                <source srcset="assets/sala-interna.webp" type="image/webp">
+                <img src="assets/sala-interna.jpg" 
+                     alt="L'ampia sala interna e il bancone moderno del Caffè del Corso" 
+                     loading="lazy" width="400" height="300">
+              </picture>
+              <div class="atmosphere-overlay">
+                <h4>La Sala Interna &amp; Bancone Moderno</h4>
+                <p>Spazi confortevoli e luminosi per colazioni, incontri di lavoro e pause rilassanti.</p>
+              </div>
+            </div>
+
+            <!-- 3. Cocktail Martini / Aperitivo -->
+            <div class="atmosphere-card reveal" style="--card-delay: 0.3s">
+              <picture>
+                <source srcset="assets/cocktail-martini.webp" type="image/webp">
+                <img src="assets/cocktail-martini.jpg" 
+                     alt="Cocktail Espresso Martini servito al Caffè del Corso" 
+                     loading="lazy" width="400" height="300">
+              </picture>
+              <div class="atmosphere-overlay">
+                <h4>Cocktail &amp; Aperitivi d'Autore</h4>
+                <p>Miscelazione curata con ingredienti premium e il nostro tocco di caffè artigianale.</p>
+              </div>
+            </div>
+
+            <!-- 4. L'Accoglienza e il Sorriso al Banco -->
+            <div class="atmosphere-card reveal" style="--card-delay: 0.4s">
+              <picture>
+                <source srcset="assets/hero-barista.webp" type="image/webp">
+                <img src="assets/hero-barista.jpg" 
+                     alt="Il cordiale barista del Caffè del Corso Carpi pronto ad accogliere i clienti" 
+                     loading="lazy" width="400" height="300">
+              </picture>
+              <div class="atmosphere-overlay">
+                <h4>L'Ospitalità che fa Casa</h4>
+                <p>Un buongiorno caloroso, la brioche che preferisci e il caffè proprio come piace a te.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         7. DOVE SIAMO & CONTATTI (Footer & Mappe)
+         ═══════════════════════════════════════════ -->
+    <section class="section contact-section" id="dove-siamo" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Ti Aspettiamo a Carpi</span>
+          <h2 id="contact-title" class="section-title">Dove Siamo &amp; Orari</h2>
+          <p class="section-desc">
+            Siamo facilissimi da raggiungere: ci trovi lungo Corso Manfredo Fanti, all'incrocio tra la passeggiata dello shopping e la piazza.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Colonna Mappa Interattiva -->
+          <div class="map-card reveal">
+            <div class="map-embed-wrap">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.852936744855!2d10.881473576629983!3d44.783859971071295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fe49b49f2b84f%3A0xe7975b9aa4f454f7!2sCorso%20Manfredo%20Fanti%2C%2093%2C%2041012%20Carpi%20MO!5e0!3m2!1sit!2sit!4v1715000000000!5m2!1sit!2sit" 
+                width="100%" height="380" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" 
+                title="Posizione di Caffè del Corso su Google Maps">
+              </iframe>
+            </div>
+            <div class="map-card-footer">
+              <div class="map-address-info">
+                <strong>Caffè del Corso</strong>
+                <span>Corso Manfredo Fanti, 93 · 41012 Carpi (MO)</span>
+              </div>
+              <a href="https://maps.google.com/?q=Corso+Manfredo+Fanti+93+Carpi+MO" 
+                 target="_blank" rel="noopener noreferrer" 
+                 class="btn btn-outline-map">
+                <span>Apri Indicazioni Maps</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Colonna Informazioni Orari & Chiamata/WhatsApp Rapidi -->
+          <div class="contact-info-col reveal">
+            <!-- Scheda Orari -->
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon" aria-hidden="true">⏰</span>
+                <h3 class="info-card-title">Orari di Apertura</h3>
+              </div>
+              <ul class="hours-list">
+                <li class="hours-row">
+                  <span class="day">Lunedì – Giovedì</span>
+                  <span class="time">07:00 – 01:00</span>
+                </li>
+                <li class="hours-row hours-row--highlight">
+                  <span class="day">Venerdì – Sabato</span>
+                  <span class="time"><strong>07:00 – 02:00</strong></span>
+                </li>
+                <li class="hours-row">
+                  <span class="day">Domenica</span>
+                  <span class="time">07:00 – 01:00</span>
+                </li>
+              </ul>
+              <p class="hours-note">Sempre aperti 7 giorni su 7 per colazioni, pranzi, aperitivi e dopo cena.</p>
+            </div>
+
+            <!-- Scheda Contatti Rapidi -->
+            <div class="info-card">
+              <div class="info-card-header">
+                <span class="info-card-icon" aria-hidden="true">📞</span>
+                <h3 class="info-card-title">Contatti Rapidi</h3>
+              </div>
+              <p class="contact-desc">
+                Prenota un tavolo o chiedi disponibilità per gruppi con un solo tocco sul tuo smartphone:
+              </p>
+              
+              <!-- Pulsanti Rapidi Obbligatori -->
+              <div class="quick-contact-buttons">
+                <!-- Chiama Ora -->
+                <a href="tel:+390596865270" class="btn btn-call-action" aria-label="Chiama il Caffè del Corso al 059 686527">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <div class="btn-text-wrap">
+                    <span class="btn-title">Chiama Ora</span>
+                    <span class="btn-detail">+39 059 686527</span>
+                  </div>
+                </a>
+
+                <!-- WhatsApp Diretto -->
+                <a href="https://wa.me/390596865270?text=Ciao%20Caff%C3%A8%20del%20Corso!%20Vorrei%20prenotare%20un%20tavolo." 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="btn btn-whatsapp-action" 
+                   aria-label="Invia messaggio WhatsApp al Caffè del Corso">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  <div class="btn-text-wrap">
+                    <span class="btn-title">Invia Messaggio WhatsApp</span>
+                    <span class="btn-detail">Chat diretta e prenotazioni</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       8. FOOTER ELEGANTE & DETTAGLIATO
+       ═══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col footer-col-brand">
+        <a href="#hero" class="brand-logo footer-brand-logo">
+          <span class="brand-name">Caffè del Corso</span>
+        </a>
+        <p class="footer-tagline">
+          La caffetteria e cocktail bar punto di riferimento nel cuore storico di Carpi. Qualità, tradizione emiliana e atmosfera autentica ogni giorno.
+        </p>
+        <p class="footer-badge-stars">
+          ★ <strong>4.4 su Google Maps</strong> · Consigliato dai residenti e visitatori
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navigazione</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#momenti">I Tre Momenti</a></li>
+          <li><a href="#menu">Menu Digitale</a></li>
+          <li><a href="#chi-siamo">L'Atmosfera &amp; Chi Siamo</a></li>
+          <li><a href="#dove-siamo">Dove Siamo &amp; Orari</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Indirizzo &amp; Info</h4>
+        <address class="footer-address">
+          Corso Manfredo Fanti, 93<br>
+          41012 Carpi (MO) — Italia<br>
+          <span class="footer-landmark">Vicinissimo a Piazza dei Martiri</span>
+        </address>
+        <p class="footer-phone">
+          Tel: <a href="tel:+390596865270">+39 059 686527</a>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Orari Settimanali</h4>
+        <p class="footer-schedule">
+          <strong>Lun – Gio:</strong> 07:00 – 01:00<br>
+          <strong>Ven – Sab:</strong> 07:00 – 02:00<br>
+          <strong>Domenica:</strong> 07:00 – 01:00
+        </p>
+        <a href="https://wa.me/390596865270?text=Ciao%20Caff%C3%A8%20del%20Corso!" target="_blank" rel="noopener noreferrer" class="footer-wa-link">
+          Scrivici su WhatsApp →
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; <span id="current-year">2026</span> Caffè del Corso Carpi. Tutti i diritti riservati.</p>
+        <p class="footer-credits">Corso Manfredo Fanti, 93 · 41012 Carpi (MO)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       9. FLOATING WHATSAPP BUTTON (In basso a destra)
+       ═══════════════════════════════════════════ -->
+  <a href="https://wa.me/390596865270?text=Ciao%20Caff%C3%A8%20del%20Corso!%20Vorrei%20informazioni%20o%20prenotare." 
+     target="_blank" rel="noopener noreferrer" 
+     class="floating-whatsapp" 
+     aria-label="Contattaci subito su WhatsApp">
+    <span class="wa-tooltip">Scrivici su WhatsApp</span>
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Script principale -->
+  <script src="script.js"></script>
+</body>
+</html>
